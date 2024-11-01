@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% set active_page = "index2" %}
+
+{% block title %}index2{% endblock %}
+
+{% block content %}
+    <!--page content-->
+    <h1>Enter Date to find Attack that happened on that day</h1>
+
+    <form action = "/response">
+      <div class="input-group">
+        <span class="input-group-text">Put the year here:</span>
+        <input type="text" class="form-control" placeholder="2001" name="year">
+      </div>
+      <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+
+<p>{{year}}</p>
+
+{% endblock %}
